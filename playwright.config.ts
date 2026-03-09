@@ -27,7 +27,7 @@ export default defineConfig({
   use: {
     baseURL: 'https://edm.test.technolutions.net',
 
-    headless: false,
+    headless: true,
 
     actionTimeout: 10000,
 
