@@ -15,7 +15,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
 
   /* Retry failed tests (useful in CI) */
-  retries: process.env.CI ? 2 : 1,
+  retries: process.env.CI ? 0 : 0,
 
   /* Number of parallel workers */
   workers: process.env.CI ? 1 : 2,
@@ -27,7 +27,7 @@ export default defineConfig({
   use: {
     baseURL: 'https://edm.test.technolutions.net',
 
-    headless: true,
+    headless: false,
 
     actionTimeout: 10000,
 
